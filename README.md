@@ -9,7 +9,7 @@ from vkvisualization.dataset import DataSet
 ```
 
 ### Initialization
-This class inherits `pandas.DataFrame` class and its constructor gets all arguments that `pandas.DataFrame constructor` has.
+This class inherits `pandas.DataFrame` class and its constructor gets all arguments that `pandas.DataFrame` constructor has.
 ```python
 import pandas as pd
 from vkvisualization.dataset import DataSet
