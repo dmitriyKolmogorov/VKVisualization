@@ -19,7 +19,7 @@ dataset = DataSet(df)
 ```
 
 #### Initialize from file
-In this class defined two class methods - 'from_excel' and 'from_csv'. Both of these methods have one mandatory argument - path pf file and kwargs for `pandas` reading function.
+In this class defined two class methods - 'from_excel' and 'from_csv'. Both of these methods have one mandatory argument - path of file and kwargs for `pandas` reading function.
 Example of using `from_excel` method:
 ```python
 from vkvisualization.dataset import DataSet
@@ -31,3 +31,13 @@ Example of using `from_csv` method:
 from vkvisualization.dataset import DataSet
 
 dataset = DataSet.from_csv('group.csv')
+#### Getting data
+All methods described lower have two non-mandatory arguments - `start` and `end`. These arguments are responsible for start date and end date. If `start` is None, data will be selected from the minimum date in the sample. If `end` is None, data will be selected from the start to the maximum date in the sample. 
+
+###### Dataset.views(start=None, end=None) -> np.ndarray
+```python
+dataset = DataSet.from_excel('group.xls)
+print(dataset.views(end='2020-07-27'))
+```
+
+###### 
