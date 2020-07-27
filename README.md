@@ -47,5 +47,39 @@ dataset = DataSet.from_excel('group.xls)
 print(dataset.visitors(start='2020-01-01', end='2020-07-27'))
 ```
 
-####
+#### `DataSet.age(key='18-21', start=None, end=None) -> np.ndarray`
+```python
+dataset = DataSet.from_excel('group.xls)
+print(dataset.age(start='2020-01-01', 
+                  end='2020-07-27',
+                  key='18-21'))
+```
+Raises `ValueError` if key is uknown. All available keys will be described in the description of `ValueError`.
+
+#### `DataSet.gender(key='Ж', start=None, end=None) -> np.ndarray`
+```python
+dataset = DataSet.from_excel('group.xls)
+print(dataset.gender(start='2020-01-01', 
+                     end='2020-07-27',
+                     key='Ж'))
+```
+Raises `ValueError` if key is unknown. `key` argument has to be 'М' or 'Ж'.
+
+#### `DataSet.gender_age(gender='Ж', age='18-21', start=None, end=None) -> np.ndarray`
+```python
+dataset = DataSet.from_excel('group.xls)
+print(dataset.gender_age(start='2020-01-01', 
+                         end='2020-07-27',
+                         gender='Ж',
+                         age='18-21'))
+```
+
+#### `DataSet.city(city:str, start=None, end=None) -> np.ndarray`
+```python
+dataset = DataSet.from_excel('group.xls)
+print(dataset.views('Москва',
+                    start='2020-01-01', 
+                    end='2020-07-27'))
+```
+Raises `ValueError` if `city` argument was declared invalid. To get all available names for `city` argument use `DataSet.available_cities()`.
 
