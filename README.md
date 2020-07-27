@@ -31,6 +31,7 @@ Example of using `from_csv` method:
 from vkvisualization.dataset import DataSet
 
 dataset = DataSet.from_csv('group.csv')
+```
 #### Getting data
 All methods described lower have two non-mandatory arguments - `start` and `end`. These arguments are responsible for start date and end date. If `start` is None, data will be selected from the minimum date in the sample. If `end` is None, data will be selected from the start to the maximum date in the sample. 
 
