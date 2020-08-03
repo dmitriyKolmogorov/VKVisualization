@@ -70,7 +70,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -95,7 +95,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -119,7 +119,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -149,7 +149,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -174,7 +174,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -203,7 +203,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -213,7 +213,7 @@ class DataSet(pd.DataFrame):
         return self['Значение'][(self['Дата'] <= end) & 
                                  (self['Дата'] >= start) & 
                                  (self['Критерий'] == 'countries') & 
-                                 (self['Парам. №1'] == city)].values 
+                                 (self['Парам. №1'] == country)].values 
 
 
     def available_countries(self) -> list:
@@ -228,7 +228,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -248,7 +248,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -268,7 +268,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -288,7 +288,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -308,7 +308,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -328,7 +328,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -348,7 +348,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -368,7 +368,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -388,7 +388,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -408,7 +408,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -427,7 +427,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
@@ -465,7 +465,7 @@ class DataSet(pd.DataFrame):
         start = self._preprocess_start(start)
 
         # preprocessing end argument
-        end = self.__preprocess_end(end)
+        end = self._preprocess_end(end)
 
         # if start is greater than end
         if start >= end:
