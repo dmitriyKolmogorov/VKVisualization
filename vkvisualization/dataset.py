@@ -28,10 +28,10 @@ class DataSet(pd.DataFrame):
         self.__end = np.datetime64(self['Дата'].max()) 
 
         # available cities in DataSet
-        self.__cities = self['Парам. №1'][self['Критерий'] == 'cities'].unique()
+        self._cities = self['Парам. №1'][self['Критерий'] == 'cities'].unique()
 
         # available countries in DataSet
-        self.__countries = self['Парам. №1'][self['Критерий'] == 'countries'].unique()
+        self._countries = self['Парам. №1'][self['Критерий'] == 'countries'].unique()
 
 
     def start_date(self):

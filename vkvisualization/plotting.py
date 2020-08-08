@@ -21,8 +21,6 @@ def visualize_views(dataset:DataSet, start=None, end=None, intercept=0):
 
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
-        elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         elif kind == 'barh':
@@ -37,7 +35,7 @@ def visualize_views(dataset:DataSet, start=None, end=None, intercept=0):
 def visualize_visitors(dataset:DataSet, start=None, end=None, intercept=0):
     '''Visualizes visitors statistics with matplotlib'''
 
-    data = dataset.visitors(star=start, 
+    data = dataset.visitors(start=start, 
                             end=end)
 
     x_axis = range(intercept, len(data) + intercept)
@@ -52,7 +50,7 @@ def visualize_visitors(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -81,7 +79,7 @@ def visualize_age(dataset:DataSet, key='18-21', start=None, end=None, intercept=
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -110,7 +108,7 @@ def visualize_gender(dataset:DataSet, key='Ж', start=None, end=None, intercept=
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -140,7 +138,7 @@ def visualize_gender_age(dataset:DataSet, gender='Ж', age='18-21', start=None, 
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -169,7 +167,7 @@ def visualize_city(dataset:DataSet, city:str, start=None, end=None, intercept=0)
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -198,7 +196,7 @@ def visualize_country(dataset:DataSet, country:str, start=None, end=None, interc
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -226,7 +224,7 @@ def visualize_discussions(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -254,7 +252,7 @@ def visualize_audio(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -282,7 +280,7 @@ def visualize_videos(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -310,7 +308,7 @@ def visualize_photo_albums(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -338,7 +336,7 @@ def visualize_likes(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -366,7 +364,7 @@ def visualize_comments(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -394,7 +392,7 @@ def visualize_told_friends(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -422,7 +420,7 @@ def visualize_new_members(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -450,7 +448,7 @@ def visualize_exited_members(dataset:DataSet, start=None, end=None, intercept=0)
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -478,7 +476,7 @@ def visualize_reach(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -506,7 +504,7 @@ def visualize_reach_subscribers(dataset:DataSet, start=None, end=None, intercept
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -534,7 +532,7 @@ def visualize_reach_viral(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
@@ -562,7 +560,7 @@ def visualize_reach_ads(dataset:DataSet, start=None, end=None, intercept=0):
         if kind == 'plot':
             ax.plot(x_axis, data, **kwargs)
         elif kind == 'hist':
-            ax.hist(x_axis, data, **kwargs)
+            ax.hist(data, **kwargs)
         elif kind == 'bar':
             ax.bar(x_axis, data, **kwargs)
         else:
